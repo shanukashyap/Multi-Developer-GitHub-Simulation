@@ -1,5 +1,163 @@
 # Multi-Developer GitHub Simulation
 
+GitHub Repository
+
+Repository:
+
+https://github.com/shanukashyap/Multi-Developer-GitHub-Simulation
+
+Pull Request
+
+Pull Request #1: Add subtraction feature
+
+https://github.com/shanukashyap/Multi-Developer-GitHub-Simulation/pull/1
+
+Developer A — Connect Local Repository to GitHub
+
+After creating the local Git repository, connect it to the actual GitHub repository:
+
+git remote add origin https://github.com/shanukashyap/Multi-Developer-GitHub-Simulation.git
+
+Check the remote:
+
+git remote -v
+
+Expected output:
+
+origin  https://github.com/shanukashyap/Multi-Developer-GitHub-Simulation.git (fetch)
+origin  https://github.com/shanukashyap/Multi-Developer-GitHub-Simulation.git (push)
+
+Push the main branch:
+
+git push -u origin main
+
+Developer B — Clone the Repository
+
+Developer B clones the actual GitHub repository:
+
+git clone https://github.com/shanukashyap/Multi-Developer-GitHub-Simulation.git
+
+Move into the project:
+
+cd Multi-Developer-GitHub-Simulation
+
+Check the remote:
+
+git remote -v
+
+Expected output:
+
+origin  https://github.com/shanukashyap/Multi-Developer-GitHub-Simulation.git (fetch)
+origin  https://github.com/shanukashyap/Multi-Developer-GitHub-Simulation.git (push)
+Fetch the Latest Changes
+
+Developer B can retrieve information from the GitHub repository using:
+
+git fetch origin
+Pull the Latest Main Branch
+
+Developer B can update the local main branch using:
+
+git pull origin main
+Create the Feature Branch
+
+Developer B creates the feature branch:
+
+git checkout -b feature-subtract
+
+The feature branch is:
+
+feature-subtract
+Push the Feature Branch
+
+After implementing and committing the subtraction feature:
+
+git push -u origin feature-subtract
+
+The feature branch is then available on the GitHub repository:
+
+https://github.com/shanukashyap/Multi-Developer-GitHub-Simulation/tree/feature-subtract
+
+Pull Request
+
+Developer B creates a Pull Request from:
+
+feature-subtract
+
+into:
+
+main
+Pull Request #1
+
+Title: Add subtraction feature
+
+Pull Request URL:
+
+https://github.com/shanukashyap/Multi-Developer-GitHub-Simulation/pull/1
+
+The Pull Request contains the subtraction feature implemented by Developer B.
+
+Code Review and Merge
+
+The Pull Request is reviewed before merging.
+
+The reviewer checks the changed files and verifies that the subtraction feature works correctly.
+
+After review, the Pull Request is merged into the main branch.
+
+The final project is available at:
+
+https://github.com/shanukashyap/Multi-Developer-GitHub-Simulation
+
+Final GitHub URLs
+Item	URL
+GitHub Repository	https://github.com/shanukashyap/Multi-Developer-GitHub-Simulation
+Main Branch	https://github.com/shanukashyap/Multi-Developer-GitHub-Simulation/tree/main
+Feature Branch	https://github.com/shanukashyap/Multi-Developer-GitHub-Simulation/tree/feature-subtract
+Pull Request #1	https://github.com/shanukashyap/Multi-Developer-GitHub-Simulation/pull/1
+Commit — Add subtraction feature	https://github.com/shanukashyap/Multi-Developer-GitHub-Simulation/commit/6e9463c8a23a2863eb20308a527bf4f121431a7c
+Complete Clone-to-Merge Workflow
+# Developer B clones the repository
+git clone https://github.com/shanukashyap/Multi-Developer-GitHub-Simulation.git
+
+# Enter the project
+cd Multi-Developer-GitHub-Simulation
+
+# Check remote repository
+git remote -v
+
+# Fetch remote changes
+git fetch origin
+
+# Pull latest main branch
+git pull origin main
+
+# Create feature branch
+git checkout -b feature-subtract
+
+# After implementing the feature
+git status
+git diff
+
+# Stage changes
+git add .
+
+# Commit feature
+git commit -m "Add subtraction feature"
+
+# Push feature branch
+git push -u origin feature-subtract
+
+Then create:
+
+Pull Request #1:
+https://github.com/shanukashyap/Multi-Developer-GitHub-Simulation/pull/1
+
+After the Pull Request is reviewed and merged:
+
+git checkout main
+git pull origin main
+
 A Python project created to demonstrate a real-world **Git and GitHub collaboration workflow** involving multiple developers.
 
 In this project, two developers are simulated using separate branches and a separate clone of the GitHub repository.
@@ -275,7 +433,7 @@ This renames the current branch to `main`.
 ## Step 7: Connect to GitHub
 
 ```bash
-git remote add origin https://github.com/YOUR_USERNAME/Multi-Developer-GitHub-Simulation.git
+git remote add origin https://github.com/shanukashyap/Multi-Developer-GitHub-Simulation.git
 ```
 
 The `origin` remote represents the GitHub repository.
@@ -315,8 +473,8 @@ git remote -v
 Example:
 
 ```text
-origin  https://github.com/YOUR_USERNAME/Multi-Developer-GitHub-Simulation.git (fetch)
-origin  https://github.com/YOUR_USERNAME/Multi-Developer-GitHub-Simulation.git (push)
+origin  https://github.com/shanukashyap/Multi-Developer-GitHub-Simulation.git (fetch)
+origin  https://github.com/shanukashyap/Multi-Developer-GitHub-Simulation.git (push)
 ```
 
 ---
@@ -328,7 +486,7 @@ Developer B simulates another developer joining the project.
 ## Step 1: Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Multi-Developer-GitHub-Simulation.git
+git clone https://github.com/shanukashyap/Multi-Developer-GitHub-Simulation.git
 ```
 
 `git clone` downloads the GitHub repository to the local computer.
